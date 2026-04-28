@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  background-color: #0a0a0f;
+  color: white;
+  font-family: 'Cairo', 'Inter', sans-serif;
+}
+
+/* تأثيرات مخصصة */
+.glow-text {
+  background: linear-gradient(135deg, #4facfe 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.glass-effect {
+  background: rgba(15, 15, 25, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(59,130,246,0.3);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139,92,246,0.5);
+}
+.card-glow {
+  border: 1px solid rgba(59,130,246,0.3);
+  box-shadow: 0 0 15px rgba(59,130,246,0.2);
+  transition: all 0.3s ease;
+}
+.card-glow:hover {
+  border-color: rgba(139,92,246,0.7);
+  box-shadow: 0 0 25px rgba(139,92,246,0.4);
+}
